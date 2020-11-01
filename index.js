@@ -39,7 +39,7 @@ export const IPClicksCalculator = {
     },
 
     /** To remove particular IP groups having click count > 10
-     * @param ipSets : IP address grouped object { <ip address> : [clicks for respective IP] }
+     * @param ipSets : IP address grouped object { <ip address> : [{click object for respective IP}] }
      */
     removeIpGroupsWithMoreThanTenClicks(ipSets) {
         for (let key in ipSets) {
