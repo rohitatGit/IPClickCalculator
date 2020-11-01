@@ -1,6 +1,17 @@
 # Project Title
 
-this application returns the most expensive clicks per IP in an hour Period
+The application processes list of clicks on some IP address and get the most expensive clicks per IP for each one hour Period of a day.
+
+1. A ​click​ ​is the composite of an IP address, a timestamp, and a click amount.
+2. Duplicate clicks​​ are clicks that have the same IP address, regardless of timestamp or
+   click amount.
+3. Click periods​​ are defined as the one hour spans that start at the top of the hour. So, in
+   one day, there are 24 periods and they are broken down as follows (in HH:MM:SS format):
+   00:00:00 ​ 00:59:59 (period 1) 01:00:00 ​ 01:59:59 (period 2) 02:00:00 ​ 02:59:59 (period 3) ...
+   22:00:00 ​ 22:59:59 (period 23) 23:00:00 ​ 23:59:59 (period 24)
+
+Input File : clicks.json--
+Output File : resultSet.json
 
 ## Requirements
 
