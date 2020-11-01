@@ -12,20 +12,20 @@ For development, you will only need Node.js and a node global package, npm, inst
 
     library which helps in parsing, validating, manipulating and displaying date/time in JavaScript in a very easy way
 
-    In current application,using this package to group the clicks array on basis of timestamp field.
+    In current application,utilizing this package to group the clicks array on basis of timestamp field.
 
 -   #### Lodash
 
     JavaScript library which provides utility functions for common programming tasks using the functional programming paradigm.
 
-    In current application,using this below functions from package :
+    In current application,utilizing below functions from this package :
 
     sortBy : Sorting the clicks array in asc order on basic of datetime values.\
     maxBy : find the object with maximun click amount.\
     groupBy : Grouping the input clicks Array on basic of Ip address,timestamp.
 
 -   #### FS (File System)
-    Node.js built libary to do File I/O(read and write) opertions
+    Node.js built in libary to do File I/O(read and write) opertions.
 
 ## Install
 
