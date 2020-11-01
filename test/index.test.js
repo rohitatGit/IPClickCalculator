@@ -61,7 +61,6 @@ describe('createResultSetFile()', function() {
             const data = fs.readFileSync('resultSet.json');
             if (data) {
                 if (err) assert.fail();
-                console.log('datatatatata', data);
                 const clicks = JSON.parse(data);
                 assert.strictEqual(clicks.length, resultset.length);
             } else {

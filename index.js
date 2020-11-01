@@ -57,7 +57,9 @@ export const IPClicksCalculator = {
         }
     },
 
-    /** apply one hour time span condition on each IP group */
+    /** apply one hour time span condition on each IP group
+     * @param ipSets : IP address grouped object { <ip address> : [{click object for respective IP}] }
+     */
     applyPerHourConditionOnEachIPGroup(ipSets) {
         let results = [];
         for (let key in ipSets) {
@@ -68,7 +70,10 @@ export const IPClicksCalculator = {
         this.createResultSetFile(results, this.writeCallBack);
     },
 
-    /** get the most expensive list per IP address */
+    /** get the most expensive click object per IP address
+     * @param ipData : Array of click objects for one IP per function call.
+     * @param cb : callback function to execute with result(most expensive click object per IP)
+     */
     getMostExpensiveClick(ipData, cb) {
         try {
             const timeStampGroups = groupBy(ipData, function(ip) {
