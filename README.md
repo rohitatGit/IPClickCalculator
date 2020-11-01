@@ -1,4 +1,4 @@
-# Project Title
+# IPClickCalculator
 
 The application processes list of clicks on some IP addresses and get the most expensive clicks per IP for each one hour Period of a day.
 
