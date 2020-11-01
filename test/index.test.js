@@ -674,13 +674,15 @@ describe('getMostExpensiveClick()', function() {
 describe('emptyResultFile()', function() {
     it('should empty resultSet Json', function(done) {
         ipCalc.emptyResultFile();
-        const data = fs.readFileSync('resultSet.json');
-        if (data) {
-            const clicks = JSON.parse(data);
-            assert.strictEqual(clicks.length, []);
-        } else {
-            assert.fail();
-        }
-        done();
+        setTimeout(() => {
+            const data = fs.readFileSync('resultSet.json');
+            if (data) {
+                const clicks = JSON.parse(data);
+                assert.strictEqual(clicks.length, 0);
+            } else {
+                assert.fail();
+            }
+            done();
+        }, 1000);
     });
 });

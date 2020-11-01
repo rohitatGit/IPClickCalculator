@@ -11,7 +11,6 @@ import { groupBy, forEach, maxBy, sortBy } from 'lodash';
 export const IPClicksCalculator = {
     /** To Read Content fron clicks.json File */
     getIpClickList() {
-        console.time();
         const self = this;
         try {
             fs.readFile(constants.CLICK_JSON_PATH, function(err, data) {
@@ -128,7 +127,6 @@ export const IPClicksCalculator = {
             throw err;
         }
         logger(constants.RESULTS_WRITTEN);
-        console.timeEnd();
     }
 };
 
