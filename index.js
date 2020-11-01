@@ -37,7 +37,7 @@ export const IPClicksCalculator = {
         this.removeIpGroupsWithMoreThanTenClicks(iPDetails);
     },
 
-    /** To remove particular IP groups having click count > 10
+    /** To remove particular IP groups having click objects count > 10
      * @param ipSets : IP address grouped object { <ip address> : [{click object for respective IP}] }
      */
     removeIpGroupsWithMoreThanTenClicks(ipSets) {
@@ -57,7 +57,7 @@ export const IPClicksCalculator = {
         }
     },
 
-    /** apply one hour time span condition on each IP group
+    /** apply one hour time period condition on each IP group
      * @param ipSets : IP address grouped object { <ip address> : [{click object for respective IP}] }
      */
     applyPerHourConditionOnEachIPGroup(ipSets) {
