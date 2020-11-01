@@ -18,13 +18,11 @@ For development, you will only need Node.js and a node global package, npm, inst
 
     JavaScript library which provides utility functions for common programming tasks using the functional programming paradigm.
 
-    In current application,using this package for many data manipulative operations as below :
+    In current application,using this below functions from package :
 
-    # Sorting the clicks array in asc order on basic of datetime.(sortBy function)
-
-    # find the object with maximun click amount.(maxBy Function)
-
-    # Grouping the input clicks Array on basic of Ip address,timestamp.(groupBy function)
+    sortBy : Sorting the clicks array in asc order on basic of datetime values.\
+    maxBy : find the object with maximun click amount.\
+    groupBy : Grouping the input clicks Array on basic of Ip address,timestamp.
 
 -   #### FS (File System)
     Node.js built libary to do File I/O(read and write) opertions
