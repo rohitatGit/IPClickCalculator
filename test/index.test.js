@@ -294,7 +294,7 @@ describe('getMostExpensiveClick()', function() {
         done();
     });
 
-    it('should return all most expensive clicks(maximun amount) for 2 different one hour time periods for IP (22.22.22.22)', function(done) {
+    it('should return all the most expensive clicks(maximun amount) for 2 different one hour time periods for IP (22.22.22.22)', function(done) {
         const mostExpensiveClick = [
             {
                 ip: '22.22.22.22',
@@ -433,7 +433,7 @@ describe('getMostExpensiveClick()', function() {
             }
         );
         assert.strictEqual(resultArr.length, mostExpensiveClick.length);
-        if (resultArr.length > 0) {
+        if (resultArr.length > 1) {
             assert.strictEqual(
                 resultArr[1].amount,
                 mostExpensiveClick[1].amount
@@ -506,7 +506,7 @@ describe('getMostExpensiveClick()', function() {
             }
         );
         assert.strictEqual(resultArr.length, mostExpensiveClick.length);
-        if (resultArr.length > 0) {
+        if (resultArr.length > 1) {
             assert.strictEqual(
                 resultArr[1].amount,
                 mostExpensiveClick[1].amount

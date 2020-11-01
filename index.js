@@ -105,6 +105,7 @@ export const IPClicksCalculator = {
         }
     },
 
+    /**To empty ResultSet.json File */
     emptyResultFile() {
         this.createResultSetFile([], this.writeCallBack);
     },
@@ -118,6 +119,9 @@ export const IPClicksCalculator = {
         );
     },
 
+    /** method to execution after Write resultSet.json operation is done
+     * @param err : Error object (in case Writing results to file is failed otherise null)
+     */
     writeCallBack(err) {
         if (err) {
             logger(constants.WRITE_FILE_FAILED);
