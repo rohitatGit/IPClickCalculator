@@ -13,9 +13,9 @@ For development, you will only need Node.js and a node global package, npm, inst
     Node.js built in libary to do File I/O(read and write) operations.
 
     In current application,utilizing below functions from this package :
-    
-    readFile : To Read content of Click.json\  
-    writeFile : To write result Array to resultSet.json
+
+    readFile : To Read content of Click.json.\
+    writeFile : To write result Array to resultSet.json.
 
 -   #### [Lodash](https://lodash.com/docs/4.17.15)
 
